@@ -1,13 +1,12 @@
 import { AsyncPipe, CurrencyPipe, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { Observable } from 'rxjs';
 import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-shipping',
   standalone: true,
-  imports: [NgFor, CurrencyPipe, AsyncPipe, RouterLink],
+  imports: [NgFor, CurrencyPipe, AsyncPipe],
   templateUrl: './shipping.component.html',
   styleUrl: './shipping.component.css',
 })
