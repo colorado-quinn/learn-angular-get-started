@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout
+        uses: actions/checkout@v4
 
       - name: Adding Node.js
-        uses: actions/setup-node
+        uses: actions/setup-node@v4
         with:
           node-version: latest
 
