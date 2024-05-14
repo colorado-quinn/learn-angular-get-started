@@ -9,7 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --repo=https://github.com/colorado-quinn/learn-angular-get-started.git --base-href=/learn-angular-get-started/ --name=colorado-quinn --email=zachary.quinn.professional@gmail.com"
+    "deploy": "ng deploy --repo=https://github.com/colorado-quinn/learn-angular-get-started.git --base-href=/learn-angular-get-started/"
   },
   "keywords": [
     "learn",
