@@ -24,4 +24,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to gh pages
-        run: npm run deploy -- --name="colorado-quinn" --email=zachary.quinn.professional@gmail.com
+        run: npm run deploy

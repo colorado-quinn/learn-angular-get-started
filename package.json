@@ -9,7 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/learn-angular-get-started/"
+    "deploy": "ng deploy --base-href=/learn-angular-get-started/ --name=colorado-quinn --email=zachary.quinn.professional@gmail.com"
   },
   "keywords": [
     "learn",
