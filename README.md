@@ -10,4 +10,4 @@ https://angular.io/start
 
 Updates to main are automatically deployed to gihub pages.
 
-[View latest deployment 🚀](colorado-quinn.github.io/learn-angular-get-started)
+[View latest deployment 🚀](https://colorado-quinn.github.io/learn-angular-get-started)
