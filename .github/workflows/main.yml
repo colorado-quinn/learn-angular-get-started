@@ -23,11 +23,11 @@ jobs:
       - name: Build Angular App
         run: npm run build
 
+      - name: Configure git user
+      - uses: fregante/setup-git-user@v2
+
       - name: Deploy to gh pages
-        run: |
-          git config user.email "zachary.quinn.professional@gmail.com"
-          git config user.name "colorado-quinn"
-          npm run deploy
+        run: npm run deploy
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
