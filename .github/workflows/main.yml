@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Configure git user
-      - uses: fregante/setup-git-user@v2
+        uses: fregante/setup-git-user@v2
 
       - name: Deploy to gh pages
         run: npm run deploy
