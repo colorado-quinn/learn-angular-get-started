@@ -9,6 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "testCI": "ng test --source-map=false --browsers=ChromeHeadless --watch=false",
     "deploy": "ng deploy --base-href=/learn-angular-get-started/"
   },
   "keywords": [
