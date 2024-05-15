@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Run tests
-        run: npm run test
+        run: npm run testCI
 
       - name: Configure git user
         uses: fregante/setup-git-user@v2
