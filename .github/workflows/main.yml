@@ -23,6 +23,9 @@ jobs:
       - name: Build Angular App
         run: npm run build
 
+      - name: Run tests
+        run: npm run test
+
       - name: Configure git user
         uses: fregante/setup-git-user@v2
 
