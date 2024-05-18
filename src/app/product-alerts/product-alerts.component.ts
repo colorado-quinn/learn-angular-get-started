@@ -12,4 +12,5 @@ import { Product } from '../products';
 export class ProductAlertsComponent {
   @Input() product: Product | undefined;
   @Output() notify = new EventEmitter();
+  readonly MIN_PRICE = 701;
 }

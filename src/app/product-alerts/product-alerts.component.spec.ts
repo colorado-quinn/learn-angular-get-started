@@ -13,6 +13,13 @@ describe('ProductAlertsComponent', () => {
 
     fixture = TestBed.createComponent(ProductAlertsComponent);
     sut = fixture.componentInstance;
+    const testProduct = {
+      id: 1,
+      description: 'test',
+      name: 'Name1',
+      price: sut.MIN_PRICE,
+    };
+    sut.product = testProduct;
     fixture.detectChanges();
   });
 
@@ -21,14 +28,6 @@ describe('ProductAlertsComponent', () => {
   });
 
   it('should show button for product costing 701', () => {
-    sut.product = {
-      id: 1,
-      description: 'test',
-      name: 'Name1',
-      price: 701,
-    };
-    fixture.detectChanges();
-
     const productAlertsElement: HTMLElement = fixture.nativeElement;
     const button = productAlertsElement.querySelector('button');
     expect(button)
@@ -37,13 +36,8 @@ describe('ProductAlertsComponent', () => {
     expect(button?.textContent).toEqual('Notify Me');
   });
 
-  it('should not show button for product costing 700', () => {
-    sut.product = {
-      id: 1,
-      description: 'test',
-      name: 'Name1',
-      price: 700,
-    };
+  it('should not show button for product costing below min price', () => {
+    sut.product!.price = sut.MIN_PRICE - 1;
     fixture.detectChanges();
 
     const productAlertsElement: HTMLElement = fixture.nativeElement;
