@@ -27,7 +27,7 @@ describe('ProductAlertsComponent', () => {
     expect(sut).toBeTruthy();
   });
 
-  it('should show button for product costing 701', () => {
+  it('should show button for product costing min price', () => {
     const productAlertsElement: HTMLElement = fixture.nativeElement;
     const button = productAlertsElement.querySelector('button');
     expect(button)
